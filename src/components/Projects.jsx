@@ -27,7 +27,7 @@ const Projects = () => {
             <h4 className="glass-title">Netflix-Clone</h4>
             <p>I had build this project with react and for fetching the data i had used TMDB API.</p>
             <a
-              href="https://github.com/Sami-Khan28/Netflix-Clone"
+              href="https://clonenetflyx.netlify.app/"
               target="_blank"
               rel="noreferrer"
               className="glass-button"
