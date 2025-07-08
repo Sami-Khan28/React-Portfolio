@@ -1,0 +1,33 @@
+.footer {
+  background: rgba(0, 255, 0, 0.05);
+  backdrop-filter: blur(10px);
+  border-top: 1px solid rgba(57, 255, 20, 0.3);
+  color: #39FF14;
+  font-size: 0.9rem;
+  z-index: 10;
+}
+
+.footer a {
+  color: #39FF14;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: #00ff88;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+@media (min-width: 576px) {
+  .footer-content {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
