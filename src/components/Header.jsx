@@ -16,7 +16,7 @@ const Header = () => {
           Hi, I'm{' '}
           <span className="typing-text">
             <Typewriter
-              words={['Sami Khan', 'a Developer', 'a Designer']}
+              words={['Sami Khan', 'a Full Stack Java Developer', 'a Designer']}
               loop={true}
               cursor
               cursorStyle="|"
