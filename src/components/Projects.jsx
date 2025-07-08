@@ -11,7 +11,7 @@ const Projects = () => {
             <h4 className="glass-title">Portfolio Website</h4>
             <p>A personal portfolio built using React, Bootstrap.</p>
             <a
-              href="https://github.com/Sami-Khan28/React-Portfolio"
+              href="https://sami-portfolio-inky.vercel.app/"
               target="_blank"
               rel="noreferrer"
               className="glass-button"
