@@ -27,6 +27,14 @@ const Header = () => {
           </span>
         </h1>
         <p className="lead mt-3">Welcome to my portfolio</p>
+        <a
+  href="/Sami-Resume.pdf"
+  download
+  className="btn btn-outline-success resume-download"
+>
+  Download Resume
+</a>
+
       </div>
     </div>
   );
