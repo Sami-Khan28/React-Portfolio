@@ -34,3 +34,16 @@
   border-radius: 50%;
   border: 3px solid #000;
 }
+.resume-download {
+  color: #39FF14;
+  border-color: #39FF14;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(4px);
+}
+
+.resume-download:hover {
+  background-color: rgba(57, 255, 20, 0.1);
+  color: #00ff88;
+  box-shadow: 0 0 8px #00ff88;
+}

@@ -10,9 +10,18 @@ const GlassNavbar = () => {
     <Navbar expand="lg" className="glass-navbar fixed-top">
       <Container>
         <Navbar.Brand href="#home" className="nav-brand">Portfolio</Navbar.Brand>
+        <a
+  href="/Sami-Resume.pdf"
+  download
+  className="btn btn-outline-success resume-download"
+>
+  Download Resume
+</a>
+
         <Navbar.Toggle aria-controls="basic-navbar-nav" className="nav-toggler" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto align-items-center">
+
             <Nav.Link href="#home">Home</Nav.Link>
             <Nav.Link href="#about">About</Nav.Link>
             <Nav.Link href="#projects">Projects</Nav.Link>

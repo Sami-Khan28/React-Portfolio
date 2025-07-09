@@ -1,12 +1,13 @@
+/* Glass Card Styling */
 .glass-card {
   background: rgba(0, 255, 0, 0.05); /* subtle green tint */
-  border: 1px solid rgba(57, 255, 20, 0.4); /* neon green */
+  border: 1px solid rgba(57, 255, 20, 0.4); /* neon green border */
   border-radius: 16px;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   color: #39FF14;
   box-shadow: 0 0 10px rgba(57, 255, 20, 0.3);
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .glass-card:hover {
@@ -14,21 +15,27 @@
   box-shadow: 0 0 20px rgba(57, 255, 20, 0.5);
 }
 
-.glass-button {
+/* Button Styling */
+.glass-button,
+.btn-outline-success {
   display: inline-block;
   margin-top: 1rem;
   padding: 0.5rem 1rem;
-  color: #39FF14;
-  border: 1px solid #39FF14;
+  color: #39FF14 !important;
+  border: 1px solid #39FF14 !important;
   border-radius: 8px;
   text-decoration: none;
-  transition: background 0.3s ease;
+  background-color: transparent;
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
-.glass-button:hover {
+.glass-button:hover,
+.btn-outline-success:hover {
   background: rgba(57, 255, 20, 0.1);
+  color: #00cc00 !important;
 }
 
+/* Title and Text Styling */
 .glass-title {
   color: #39FF14;
 }
@@ -36,4 +43,50 @@
 .glass-text {
   color: #39FF14;
   font-weight: bold;
+}
+
+/* Modal Styling */
+.modal-content {
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(57, 255, 20, 0.3);
+  border-radius: 16px;
+  color: #39FF14;
+}
+
+.modal-header,
+.modal-footer {
+  border: none;
+}
+
+.modal-title {
+  color: #39FF14;
+}
+
+.modal-body ul {
+  padding-left: 1.2rem;
+}
+
+.modal-body li {
+  margin-bottom: 0.5rem;
+}
+
+/* Optional: Transition for modal */
+.modal.fade .modal-dialog {
+  transition: transform 0.3s ease-out;
+  transform: translateY(-20px);
+}
+.modal.show .modal-dialog {
+  transform: translateY(0);
+}
+.tech-icon {
+  font-size: 1.8rem;
+  color: #39FF14;
+  transition: transform 0.2s ease, color 0.2s ease;
+  cursor: default;
+}
+
+.tech-icon:hover {
+  transform: scale(1.2);
+  color: #00ff66;
 }
